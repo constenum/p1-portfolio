@@ -9,6 +9,9 @@
     <meta name="author" content="Mark Miller">
     <title>CSCI E-15 Project 1</title>
 
+    <!-- Normalize CSS -->
+    <link href="css/normalize.css" rel="stylesheet">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -30,9 +33,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#">Project 2 - PHP   Basics</a></li>
-            <li><a href="#">Project 3 - Laravel Basics</a></li>
-            <li><a href="#">Project 4 - Final</a></li>
+            <li><a href="https://github.com/constenum/p2-php-basics.git" data-toggle="modal" data-target="#modalGitHub">Project 2 - PHP   Basics</a></li>
+            <li><a href="https://github.com/constenum/p3-laravel-basics.git" data-toggle="modal" data-target="#modalGitHub">Project 3 - Laravel Basics</a></li>
+            <li><a href="https://github.com/constenum/p4-final.git" data-toggle="modal" data-target="#modalGitHub">Project 4 - Final</a></li>
           </ul>
         </div>
       </div>
@@ -48,26 +51,80 @@
           <div class="projects">
             <h3>Project 2 - PHP Basics</h3>
             <ul>
-              <li>GitHub: <a href="h#">https://github.com/constenum/p2-php-basics.git</a></li>
-              <li>Live Server: <a href="#">http://p2.constenum.us</a></li>
-              <li>Screencast: <a href="#">project 2 screencast</a></li>
+              <li>GitHub: <a href="https://github.com/constenum/p2-php-basics.git" data-toggle="modal" data-target="#modalGitHub">https://github.com/constenum/p2-php-basics.git</a></li>
+              <li>Live Server: <a href="http://p2.constenum.us" data-toggle="modal" data-target="#modalLiveServer">http://p2.constenum.us</a></li>
+              <li>Screencast: <a href="#" data-toggle="modal" data-target="#modalScreencast">project 2 screencast</a></li>
             </ul>
           </div>
           <div class="projects">
             <h3>Project 3 - Laravel Basics</h3>
             <ul>
-              <li>GitHub: <a href="#">https://github.com/constenum/p3-laravel-basics.git</a></li>
-              <li>Live Server: <a href="#">http://p3.constenum.us</a></li>
-              <li>Screencast: <a href="#">project 3 screencast</a></li>
+              <li>GitHub: <a href="https://github.com/constenum/p3-laravel-basics.git" data-toggle="modal" data-target="#modalGitHub">https://github.com/constenum/p3-laravel-basics.git</a></li>
+              <li>Live Server: <a href="http://p3.constenum.us" data-toggle="modal" data-target="#modalLiveServer">http://p3.constenum.us</a></li>
+              <li>Screencast: <a href="#" data-toggle="modal" data-target="#modalScreencast">project 3 screencast</a></li>
             </ul>
           </div>
           <div class="projects last">
             <h3>Project 4 - Final</h3>
             <ul>
-              <li>GitHub: <a href="#">https://github.com/constenum/p4-final.git</a></li>
-              <li>Live Server: <a href="h#">http://p4.constenum.us</a></li>
-              <li>Screencast: <a href="#"juku>project 4 screencast</a></li>
+              <li>GitHub: <a href="https://github.com/constenum/p4-final.git" data-toggle="modal" data-target="#modalGitHub">https://github.com/constenum/p4-final.git</a></li>
+              <li>Live Server: <a href="http://p4.constenum.us" data-toggle="modal" data-target="#modalLiveServer">http://p4.constenum.us</a></li>
+              <li>Screencast: <a href="#" data-toggle="modal" data-target="#modalScreencast">project 4 screencast</a></li>
             </ul>
+          </div>
+
+          <!-- GitHub Modal -->
+          <div class="modal fade" id="modalGitHub" tabindex="-1" role="dialog" aria-labelledby="modalGitHubLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="modalGitHubLabel">Project GitHub Link</h4>
+                </div>
+                <div class="modal-body">
+                  This link will take you to the project's GitHub page once the project is complete.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Server Modal -->
+          <div class="modal fade" id="modalLiveServer" tabindex="-1" role="dialog" aria-labelledby="modalLiveServerLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="modalLiveServerLabel">Project Live Server Link</h4>
+                </div>
+                <div class="modal-body">
+                  This link will take you to the project's live server page once the project is complete.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Screencast Modal -->
+          <div class="modal fade" id="modalScreencast" tabindex="-1" role="dialog" aria-labelledby="modalScreencastLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="modalScreencastLabel">Project Screencast Link</h4>
+                </div>
+                <div class="modal-body">
+                  This link will take you to the project's screencast page once the project is complete.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -94,7 +151,7 @@
     <!-- Stickey footer -->
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2016 Mark Miller</p>
+        <p>&copy; 2016 Mark Miller<span class="pull-right"><a href="http://subtlepatterns.com/">background from subtlepatterns.com</a></span></p>
       </div>
     </footer>
 
