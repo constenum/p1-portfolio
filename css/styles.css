@@ -5,6 +5,11 @@ html {
   min-height: 100%;
 }
 
+body {
+  background-image: url("../img/background.png"); /* http://subtlepatterns.com */
+  background-repeat: repeat;
+}
+
 body > .container {
   padding: 60px 30px 60px 15px;
   margin-bottom: 60px;
