@@ -1,0 +1,39 @@
+/* Custom page CSS
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body > .container {
+  padding: 60px 30px 60px 15px;
+  margin-bottom: 60px;
+}
+
+/* Fixed navbar styles
+-------------------------------------------------- */
+.navbar-default {
+  color: #cccccc;
+  background-color: #bb0000;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #ffffff;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #cccccc;
+}
+
+.footer > .container {
+  padding-right: 60px;
+  padding-left: 60px;
+  margin: 20px 0;
+  color: #bb0000;
+}
